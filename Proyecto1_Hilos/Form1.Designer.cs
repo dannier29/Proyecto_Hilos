@@ -48,6 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNumeros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFactoriales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPotencias)).BeginInit();
@@ -226,11 +227,22 @@
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(297, 472);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 27);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Prueba";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 523);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -284,6 +296,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.Button button1;
     }
 }
 
