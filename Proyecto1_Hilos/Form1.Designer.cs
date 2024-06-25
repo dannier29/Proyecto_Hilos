@@ -68,7 +68,7 @@
             this.dataGridViewFactoriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFactoriales.Location = new System.Drawing.Point(224, 137);
             this.dataGridViewFactoriales.Name = "dataGridViewFactoriales";
-            this.dataGridViewFactoriales.Size = new System.Drawing.Size(164, 295);
+            this.dataGridViewFactoriales.Size = new System.Drawing.Size(180, 295);
             this.dataGridViewFactoriales.TabIndex = 1;
             // 
             // dataGridViewPotencias
@@ -94,8 +94,7 @@
             this.Btn_Iniciar.Size = new System.Drawing.Size(91, 27);
             this.Btn_Iniciar.TabIndex = 4;
             this.Btn_Iniciar.Text = "Ejecutar";
-            this.Btn_Iniciar.UseVisualStyleBackColor = true;
-            this.Btn_Iniciar.Click += new System.EventHandler(this.Btn_Iniciar_Click_1);
+            this.Btn_Iniciar.Click += new System.EventHandler(this.Btn_Iniciar_Click);
             // 
             // label1
             // 
@@ -225,7 +224,6 @@
             this.btn_Salir.TabIndex = 19;
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // button1
             // 
@@ -235,7 +233,6 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Prueba";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
