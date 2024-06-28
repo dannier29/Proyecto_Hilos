@@ -36,9 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,6 +47,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.TXT_Numeros = new System.Windows.Forms.TextBox();
+            this.TXT_Tipo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNumeros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFactoriales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPotencias)).BeginInit();
@@ -68,15 +68,15 @@
             this.dataGridViewFactoriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFactoriales.Location = new System.Drawing.Point(224, 137);
             this.dataGridViewFactoriales.Name = "dataGridViewFactoriales";
-            this.dataGridViewFactoriales.Size = new System.Drawing.Size(180, 295);
+            this.dataGridViewFactoriales.Size = new System.Drawing.Size(183, 295);
             this.dataGridViewFactoriales.TabIndex = 1;
             // 
             // dataGridViewPotencias
             // 
             this.dataGridViewPotencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPotencias.Location = new System.Drawing.Point(448, 137);
+            this.dataGridViewPotencias.Location = new System.Drawing.Point(462, 137);
             this.dataGridViewPotencias.Name = "dataGridViewPotencias";
-            this.dataGridViewPotencias.Size = new System.Drawing.Size(164, 295);
+            this.dataGridViewPotencias.Size = new System.Drawing.Size(120, 295);
             this.dataGridViewPotencias.TabIndex = 2;
             // 
             // dataGridViewTablas
@@ -84,7 +84,7 @@
             this.dataGridViewTablas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTablas.Location = new System.Drawing.Point(661, 137);
             this.dataGridViewTablas.Name = "dataGridViewTablas";
-            this.dataGridViewTablas.Size = new System.Drawing.Size(164, 295);
+            this.dataGridViewTablas.Size = new System.Drawing.Size(131, 295);
             this.dataGridViewTablas.TabIndex = 3;
             // 
             // Btn_Iniciar
@@ -123,26 +123,12 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Tipo";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(171, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 20);
-            this.textBox1.TabIndex = 8;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(171, 47);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(62, 20);
             this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(425, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 20);
-            this.textBox3.TabIndex = 10;
             // 
             // label4
             // 
@@ -183,7 +169,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(493, 121);
+            this.label8.Location = new System.Drawing.Point(486, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
             this.label8.TabIndex = 16;
@@ -192,7 +178,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(500, 99);
+            this.label9.Location = new System.Drawing.Point(493, 99);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 15;
@@ -224,6 +210,7 @@
             this.btn_Salir.TabIndex = 19;
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // button1
             // 
@@ -234,11 +221,27 @@
             this.button1.Text = "Prueba";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // TXT_Numeros
+            // 
+            this.TXT_Numeros.Location = new System.Drawing.Point(171, 16);
+            this.TXT_Numeros.Name = "TXT_Numeros";
+            this.TXT_Numeros.Size = new System.Drawing.Size(62, 20);
+            this.TXT_Numeros.TabIndex = 23;
+            // 
+            // TXT_Tipo
+            // 
+            this.TXT_Tipo.Location = new System.Drawing.Point(425, 6);
+            this.TXT_Tipo.Name = "TXT_Tipo";
+            this.TXT_Tipo.Size = new System.Drawing.Size(62, 20);
+            this.TXT_Tipo.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 523);
+            this.Controls.Add(this.TXT_Tipo);
+            this.Controls.Add(this.TXT_Numeros);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.label10);
@@ -249,9 +252,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -281,9 +282,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -294,6 +293,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TXT_Numeros;
+        private System.Windows.Forms.TextBox TXT_Tipo;
     }
 }
 

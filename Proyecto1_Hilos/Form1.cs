@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto1_Hilos
@@ -9,176 +11,187 @@ namespace Proyecto1_Hilos
         private int numeroTabla = 1;
         private bool procesoActivo = false;
         private Thread procesoTabla;
-
+        List<int> numerosPares = new List<int>();
+        List<int> numerosImpares = new List<int>();
+        
+      
         public Form1()
         {
             InitializeComponent();
+
         }
 
-        private void Btn_Iniciar_Click(object sender, EventArgs e)
+        private async Task IdentificarNumeros()
         {
-            // Verificar si el proceso ya está activo
-            if (!procesoActivo)
+            
+            for (int i = 1; i <= 20; i++)
             {
-                // Iniciar el proceso en segundo plano para mostrar las tablas automáticamente
-                procesoTabla = new Thread(ProcesoMostrarTablas);
-                procesoTabla.Start();
-                procesoActivo = true;
-            }
-        }
-
-        private void ProcesoMostrarTablas()
-        {
-            // Bucle para mostrar las tablas automáticamente
-            while (numeroTabla <= 20)
-            {
-                // Mostrar la tabla de multiplicar actual
-                MostrarDatosDataGridView(numeroTabla);
-
-                // Mostrar los números impares del 1 al 20 en el DataGridView de factoriales
-                MostrarFactoriales(dataGridViewFactoriales);
-
-                // Mostrar los números pares del 1 al 20 en el DataGridView de potencias
-                MostrarPotencias(dataGridViewPotencias);
-
-                // Mostrar los números del 1 al 20 en el DataGridView de números
-                MostrarNumeros(dataGridViewNumeros);
-
-                // Incrementar el número de la tabla para la próxima vez
-                numeroTabla++;
-
-                // Esperar 1 segundo antes de mostrar la próxima tabla
-                Thread.Sleep(1000);
-            }
-
-            // Cambiar el valor de procesoActivo de manera segura desde el hilo de la UI
-            if (InvokeRequired)
-            {
-                Invoke(new Action(() => procesoActivo = false));
-            }
-            else
-            {
-                procesoActivo = false;
-            }
-        }
-
-        private void MostrarDatosDataGridView(int numero)
-        {
-            if (dataGridViewTablas.InvokeRequired)
-            {
-                // Si estamos en un subproceso diferente al de la interfaz de usuario,
-                // utilizamos Invoke para ejecutar el código en el subproceso de la UI.
-                Invoke(new Action<int>(MostrarDatosDataGridView), numero);
-            }
-            else
-            {
-                // Limpiar los DataGridView
-                dataGridViewTablas.Rows.Clear();
-                dataGridViewTablas.Columns.Clear();
-
-                // Añadir columnas a los DataGridView
-                dataGridViewTablas.Columns.Add("Multiplicacion", "Tabla de Multiplicar");
-
-                // Añadir la cabecera de la tabla de multiplicar
-                dataGridViewTablas.Rows.Add($"Tabla del {numero}");
-
-                // Añadir filas con los valores de la tabla de multiplicar
-                for (int i = 1; i <= 10; i++)
-                {
-                    string resultado = $"{numero} x {i} = {numero * i}";
-                    dataGridViewTablas.Rows.Add(resultado);
+                TXT_Numeros.Text = i.ToString();
+                if (i % 2 == 0)
+                  {
+                    TXT_Tipo.Text = "Par";
+                    numerosPares.Add(i);
                 }
-            }
-        }
-
-        private void MostrarFactoriales(DataGridView dataGridView)
-        {
-            if (dataGridView.InvokeRequired)
-            {
-                // Si estamos en un subproceso diferente al de la interfaz de usuario,
-                // utilizamos Invoke para ejecutar el código en el subproceso de la UI.
-                Invoke(new Action<DataGridView>(MostrarFactoriales), dataGridView);
-            }
-            else
-            {
-                // Limpiar el DataGridView de factoriales
-                dataGridView.Rows.Clear();
-                dataGridView.Columns.Clear();
-
-                // Añadir una columna al DataGridView
-                dataGridView.Columns.Add("Factoriales", "Factoriales de los Números Impares");
-
-                // Añadir filas con los factoriales de los números impares del 1 al 20
-                for (int i = 1; i <= 20; i += 2)
-                {
-                    string factorial = $"{i}! = {CalcularFactorial(i)}";
-                    dataGridView.Rows.Add(factorial);
+                else
+                   {
+                    TXT_Tipo.Text = "Impar";        
+                    numerosImpares.Add(i);
                 }
+               
+                await MostrarTablaMultiplicar(i); // Llamar a MostrarTablaMultiplicar con el número actual
+                await Task.Delay(500);
+
             }
         }
 
-        private void MostrarPotencias(DataGridView dataGridView)
+        private async void Btn_Iniciar_Click(object sender, EventArgs e)
         {
-            if (dataGridView.InvokeRequired)
-            {
-                // Si estamos en un subproceso diferente al de la interfaz de usuario,
-                // utilizamos Invoke para ejecutar el código en el subproceso de la UI.
-                Invoke(new Action<DataGridView>(MostrarPotencias), dataGridView);
-            }
-            else
-            {
-                // Limpiar el DataGridView de potencias
-                dataGridView.Rows.Clear();
-                dataGridView.Columns.Clear();
+            await IdentificarNumeros();
+           
+            CalcularPotencias();
+            CalcularFactoriales();
 
-                // Añadir una columna al DataGridView
-                dataGridView.Columns.Add("Potencias", "Potencias de los Números Pares");
 
-                // Añadir filas con las potencias de los números pares del 1 al 20
-                for (int i = 2; i <= 20; i += 2)
-                {
-                    double potencia = Math.Pow(i, 2); // Elevar al cuadrado para obtener la potencia
-                    string potenciaStr = $"{i}^2 = {potencia}";
-                    dataGridView.Rows.Add(potenciaStr);
-                }
+
+
+
+        }
+
+        private void mostrar()
+        {
+            // Limpiar cualquier contenido previo en dataGridViewNumeros
+            dataGridViewNumeros.Rows.Clear();
+            dataGridViewNumeros.Columns.Clear();
+
+            // Añadir columna al DataGridView para mostrar los números
+            var columnaNumeros = new DataGridViewTextBoxColumn();
+            columnaNumeros.Name = "Numeros";
+            columnaNumeros.HeaderText = "Números";
+            columnaNumeros.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Alineación al centro
+            columnaNumeros.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // Encabezado centrado
+            dataGridViewNumeros.Columns.Add(columnaNumeros);
+
+            // Añadir los números del 1 al 20 a dataGridViewNumeros
+            for (int i = 1; i <= 20; i++)
+            {
+                dataGridViewNumeros.Rows.Add(i.ToString());
             }
         }
 
-        private void MostrarNumeros(DataGridView dataGridView)
+
+
+
+
+        private async Task MostrarTablaMultiplicar(int multiplicador)
         {
-            if (dataGridView.InvokeRequired)
+            // Limpiar cualquier contenido previo en dataGridViewTablas
+            dataGridViewTablas.Rows.Clear();
+            dataGridViewTablas.Columns.Clear();
+          
+            // Añadir columna al DataGridView para mostrar la tabla de multiplicar
+            var columnaMultiplicacion = new DataGridViewTextBoxColumn();
+            columnaMultiplicacion.Name = "Multiplicacion";
+            columnaMultiplicacion.HeaderText = $"Tabla del {multiplicador}"; // Encabezado con el número de la tabla
+            columnaMultiplicacion.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Alineación a la derecha
+            columnaMultiplicacion.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // Encabezado centrado
+            dataGridViewTablas.Columns.Add(columnaMultiplicacion);
+
+            // Configurar el ajuste automático de las columnas
+            dataGridViewTablas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+         
+
+            // Llenar la tabla con los resultados de la multiplicación
+            for (int multiplicando = 1; multiplicando <= 10; multiplicando++)
             {
-                // Si estamos en un subproceso diferente al de la interfaz de usuario,
-                // utilizamos Invoke para ejecutar el código en el subproceso de la UI.
-                Invoke(new Action<DataGridView>(MostrarNumeros), dataGridView);
+                int resultado = multiplicador * multiplicando;
+                dataGridViewTablas.Rows.Add($"{multiplicador} x {multiplicando} = {resultado}");
             }
-            else
+
+            // Esperar un período de tiempo antes de mostrar la siguiente tabla
+            await Task.Delay(500); // 500 milisegundos = 0.5 segundos
+            mostrar();
+        }
+
+
+
+        private void CalcularPotencias()
+        {
+            // Limpiar cualquier contenido previo en dataGridViewPotencias
+            dataGridViewPotencias.Rows.Clear();
+            dataGridViewPotencias.Columns.Clear();
+
+            // Añadir columna al DataGridView para mostrar las potencias
+            var columnaPotencias = new DataGridViewTextBoxColumn();
+            columnaPotencias.Name = "Potencias";
+            columnaPotencias.HeaderText = "Potencias";
+            columnaPotencias.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight; // Alineación a la derecha
+            columnaPotencias.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // Encabezado centrado
+            dataGridViewPotencias.Columns.Add(columnaPotencias);
+
+            // Configurar el ajuste automático de las columnas
+            dataGridViewPotencias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Mostrar las potencias de los números pares almacenados
+            foreach (var numero in numerosPares)
             {
-                // Limpiar el DataGridView de números
-                dataGridView.Rows.Clear();
-                dataGridView.Columns.Clear();
-
-                // Añadir una columna al DataGridView
-                dataGridView.Columns.Add("Numeros", "Números del 1 al 20");
-
-                // Añadir filas con los números del 1 al 20
-                for (int i = 1; i <= 20; i++)
-                {
-                    dataGridView.Rows.Add(i.ToString());
-                }
+                // Calcular y mostrar la potencia al cuadrado del número
+                double resultado = Math.Pow(numero, 2);
+                dataGridViewPotencias.Rows.Add($"{numero} ^ 2 = {resultado}");
             }
         }
 
-        private double CalcularFactorial(int n)
-        {
-            double resultado = 1;
 
-            for (int i = 1; i <= n; i++)
+
+
+
+        private void CalcularFactoriales()
+        {
+            // Limpiar cualquier contenido previo en dataGridViewFactoriales
+            dataGridViewFactoriales.Rows.Clear();
+            dataGridViewFactoriales.Columns.Clear();
+
+            // Añadir columna al DataGridView para mostrar los factoriales
+            var columnaFactoriales = new DataGridViewTextBoxColumn();
+            columnaFactoriales.Name = "Factoriales";
+            columnaFactoriales.HeaderText = "Factoriales";
+            columnaFactoriales.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            columnaFactoriales.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight; // Alineación a la izquierda
+            dataGridViewFactoriales.Columns.Add(columnaFactoriales);
+
+            // Configurar el ajuste automático de las columnas
+            dataGridViewFactoriales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Mostrar los factoriales de los números impares almacenados
+            foreach (var numero in numerosImpares)
+            {
+                // Calcular el factorial del número impar
+                long factorial = CalcularFactorial(numero);
+                dataGridViewFactoriales.Rows.Add($"{numero}! = {factorial}");
+
+                // Esperar un período de tiempo antes de pasar al siguiente número
+             
+            }
+        }
+
+        private long CalcularFactorial(int n)
+        {
+            if (n == 0)
+                return 1;
+
+            long resultado = 1;
+            for (int i = 2; i <= n; i++)
             {
                 resultado *= i;
             }
-
             return resultado;
+        }
+
+
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
