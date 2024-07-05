@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TXT_Prueba = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -123,12 +123,12 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Tipo";
             // 
-            // textBox2
+            // TXT_Prueba
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 20);
-            this.textBox2.TabIndex = 9;
+            this.TXT_Prueba.Location = new System.Drawing.Point(171, 47);
+            this.TXT_Prueba.Name = "TXT_Prueba";
+            this.TXT_Prueba.Size = new System.Drawing.Size(62, 20);
+            this.TXT_Prueba.TabIndex = 9;
             // 
             // label4
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TXT_Prueba);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -282,7 +282,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TXT_Prueba;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

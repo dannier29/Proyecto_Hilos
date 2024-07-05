@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 273,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Program.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Program.cs",
+              "RelativeToolTip": "Proyecto1_Hilos\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAtwBIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T03:12:01.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.Designer.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.Designer.cs",
+              "RelativeToolTip": "Proyecto1_Hilos\\Form1.Designer.cs",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAtwA0BAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:10:21.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
+              "RelativeToolTip": "Proyecto1_Hilos\\Form1.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T03:53:26.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto1_Hilos\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T03:50:27.077Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
