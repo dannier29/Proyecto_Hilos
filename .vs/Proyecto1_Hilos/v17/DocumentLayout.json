@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\proyecto hilos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\proyecto hilos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\proyecto hilos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\proyecto hilos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\proyecto hilos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\proyecto hilos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|c:\\sistemas operativos\\proyecto 1\\proyecto1_hilos\\proyecto1_hilos\\proyecto hilos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|solutionrelative:proyecto1_hilos\\proyecto hilos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69B6CF65-D5F9-4699-B878-22F21AB9FE56}|Proyecto1_Hilos\\Proyecto1_Hilos.csproj|C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\proyecto1_hilos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +30,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 273,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Proyecto Hilos.resx",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.resx",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Proyecto Hilos.resx",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.resx",
+              "RelativeToolTip": "Proyecto1_Hilos\\Proyecto Hilos.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-08T23:41:58.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Program.cs",
               "RelativeDocumentMoniker": "Proyecto1_Hilos\\Program.cs",
@@ -43,12 +63,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.Designer.cs",
-              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.Designer.cs",
-              "RelativeToolTip": "Proyecto1_Hilos\\Form1.Designer.cs",
-              "ViewState": "AQIAAB8BAAAAAAAAAAAtwA0BAAAhAAAA",
+              "Title": "Proyecto Hilos.Designer.cs",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.Designer.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Proyecto Hilos.Designer.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.Designer.cs",
+              "RelativeToolTip": "Proyecto1_Hilos\\Proyecto Hilos.Designer.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAswMMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T04:10:21.056Z",
               "EditorCaption": ""
@@ -56,12 +76,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
-              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.cs",
-              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
-              "RelativeToolTip": "Proyecto1_Hilos\\Form1.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAiAAAA",
+              "Title": "Proyecto Hilos.cs",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "RelativeToolTip": "Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAAAJYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T03:53:26.547Z",
               "EditorCaption": ""
@@ -69,11 +89,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs",
-              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Form1.cs",
-              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto1_Hilos\\Form1.cs [Dise\u00F1o]",
+              "Title": "Proyecto Hilos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "RelativeDocumentMoniker": "Proyecto1_Hilos\\Proyecto Hilos.cs",
+              "ToolTip": "C:\\Sistemas Operativos\\Proyecto 1\\Proyecto1_Hilos\\Proyecto1_Hilos\\Proyecto Hilos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto1_Hilos\\Proyecto Hilos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T03:50:27.077Z",
               "EditorCaption": " [Dise\u00F1o]"
