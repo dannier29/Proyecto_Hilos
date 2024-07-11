@@ -253,7 +253,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Hilos";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
+          
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNumeros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFactoriales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPotencias)).EndInit();
